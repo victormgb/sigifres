@@ -33,8 +33,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>C:\Users\Victor\Documents\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,16 +49,182 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="Telerik.Reporting, Version=10.0.16.204, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" />
+    <Reference Include="Telerik.ReportViewer.WinForms, Version=10.0.16.204, Culture=neutral, PublicKeyToken=a9d7983dfcc261be">
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="CONEXION\CONEXIONMAESTRA.cs" />
+    <Compile Include="MODELOS\Producto.cs" />
+    <Compile Include="MODELOS\Usuario.cs" />
+    <Compile Include="MODULOS\ADMINISTRAR_PROVEEDORES.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="MODULOS\ADMINISTRAR_PROVEEDORES.Designer.cs">
+      <DependentUpon>ADMINISTRAR_PROVEEDORES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\ADMINISTRAR_USUARIOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\ADMINISTRAR_USUARIOS.Designer.cs">
+      <DependentUpon>ADMINISTRAR_USUARIOS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\DETALLE_COMPRA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\DETALLE_COMPRA.Designer.cs">
+      <DependentUpon>DETALLE_COMPRA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\GESTIONAR_COMPRA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\GESTIONAR_COMPRA.Designer.cs">
+      <DependentUpon>GESTIONAR_COMPRA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\GESTIONAR_INVENTARIO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\GESTIONAR_INVENTARIO.Designer.cs">
+      <DependentUpon>GESTIONAR_INVENTARIO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\GESTIONAR_PRODUCTOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\GESTIONAR_PRODUCTOS.Designer.cs">
+      <DependentUpon>GESTIONAR_PRODUCTOS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\GESTIONAR_VENTAS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\GESTIONAR_VENTAS.Designer.cs">
+      <DependentUpon>GESTIONAR_VENTAS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\LOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\LOGIN.Designer.cs">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\MENUPRINCIPAL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\MENUPRINCIPAL.Designer.cs">
+      <DependentUpon>MENUPRINCIPAL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\MENU_ADMINISTRAR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\MENU_ADMINISTRAR.Designer.cs">
+      <DependentUpon>MENU_ADMINISTRAR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\MENU_REPORTES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\MENU_REPORTES.Designer.cs">
+      <DependentUpon>MENU_REPORTES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\REGISTRAR_COMPRA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\REGISTRAR_COMPRA.Designer.cs">
+      <DependentUpon>REGISTRAR_COMPRA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\REGISTRAR_VENTA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\REGISTRAR_VENTA.Designer.cs">
+      <DependentUpon>REGISTRAR_VENTA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\ReporteVentas\ReporteVentasLote.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MODULOS\ReporteVentas\ReporteVentasLote.Designer.cs">
+      <DependentUpon>ReporteVentasLote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\ReporteVentas\ResumenVentas.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MODULOS\ReporteVentas\ResumenVentas.Designer.cs">
+      <DependentUpon>ResumenVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\REPORTE_GENERAL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\REPORTE_GENERAL.Designer.cs">
+      <DependentUpon>REPORTE_GENERAL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\REPORTE_POR_LOTE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\REPORTE_POR_LOTE.Designer.cs">
+      <DependentUpon>REPORTE_POR_LOTE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\usuariosok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\usuariosok.Designer.cs">
+      <DependentUpon>usuariosok.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UTILIDADES\Encrypt.cs" />
+    <Compile Include="UTILIDADES\EnviarCorreo.cs" />
+    <EmbeddedResource Include="MODULOS\ADMINISTRAR_PROVEEDORES.resx">
+      <DependentUpon>ADMINISTRAR_PROVEEDORES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\ADMINISTRAR_USUARIOS.resx">
+      <DependentUpon>ADMINISTRAR_USUARIOS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\DETALLE_COMPRA.resx">
+      <DependentUpon>DETALLE_COMPRA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\GESTIONAR_COMPRA.resx">
+      <DependentUpon>GESTIONAR_COMPRA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\GESTIONAR_INVENTARIO.resx">
+      <DependentUpon>GESTIONAR_INVENTARIO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\GESTIONAR_PRODUCTOS.resx">
+      <DependentUpon>GESTIONAR_PRODUCTOS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\GESTIONAR_VENTAS.resx">
+      <DependentUpon>GESTIONAR_VENTAS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\LOGIN.resx">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\MENUPRINCIPAL.resx">
+      <DependentUpon>MENUPRINCIPAL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\MENU_ADMINISTRAR.resx">
+      <DependentUpon>MENU_ADMINISTRAR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\MENU_REPORTES.resx">
+      <DependentUpon>MENU_REPORTES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\REGISTRAR_COMPRA.resx">
+      <DependentUpon>REGISTRAR_COMPRA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\REGISTRAR_VENTA.resx">
+      <DependentUpon>REGISTRAR_VENTA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\ReporteVentas\ReporteVentasLote.resx">
+      <DependentUpon>ReporteVentasLote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\ReporteVentas\ResumenVentas.resx">
+      <DependentUpon>ResumenVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\REPORTE_GENERAL.resx">
+      <DependentUpon>REPORTE_GENERAL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\REPORTE_POR_LOTE.resx">
+      <DependentUpon>REPORTE_POR_LOTE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\usuariosok.resx">
+      <DependentUpon>usuariosok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

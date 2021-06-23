@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PUNTO_DE_VENTA_CODIGO369_CSHARP
+namespace PUNTO_DE_VENTA_CODIGO369_CSHARP.MODULOS
 {
-    public partial class Form1 : Form
+    public partial class DETALLE_COMPRA : Form
     {
-        public Form1()
+        public DETALLE_COMPRA()
         {
             InitializeComponent();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

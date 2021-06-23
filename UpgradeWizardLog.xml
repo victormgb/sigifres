@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="_UpgradeWizard_Files\UpgradeWizardLog.xslt"?>
+<log>
+  <event action="Analyze" type="Success" name="Assembly References" path="D:\Proyectos\mi_proyecto\PUNTO_DE_VENTA_CODIGO369_CSHARP\PUNTO_DE_VENTA_CODIGO369_CSHARP\PUNTO_DE_VENTA_CODIGO369_CSHARP.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="D:\Proyectos\mi_proyecto\PUNTO_DE_VENTA_CODIGO369_CSHARP\PUNTO_DE_VENTA_CODIGO369_CSHARP\App.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="D:\Proyectos\mi_proyecto\PUNTO_DE_VENTA_CODIGO369_CSHARP\PUNTO_DE_VENTA_CODIGO369_CSHARP\App.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="D:\Proyectos\mi_proyecto\PUNTO_DE_VENTA_CODIGO369_CSHARP\PUNTO_DE_VENTA_CODIGO369_CSHARP\App.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="D:\Proyectos\mi_proyecto\PUNTO_DE_VENTA_CODIGO369_CSHARP\PUNTO_DE_VENTA_CODIGO369_CSHARP\App.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="D:\Proyectos\mi_proyecto\PUNTO_DE_VENTA_CODIGO369_CSHARP\PUNTO_DE_VENTA_CODIGO369_CSHARP\App.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="D:\Proyectos\mi_proyecto\PUNTO_DE_VENTA_CODIGO369_CSHARP\PUNTO_DE_VENTA_CODIGO369_CSHARP\App.config" />
+  <event action="Analyze" type="Success" name="App.config" path="D:\Proyectos\mi_proyecto\PUNTO_DE_VENTA_CODIGO369_CSHARP\PUNTO_DE_VENTA_CODIGO369_CSHARP\App.config" />
+  <event action="Analyze" type="Success" name="GESTIONAR_COMPRA.resx" path="D:\Proyectos\mi_proyecto\PUNTO_DE_VENTA_CODIGO369_CSHARP\PUNTO_DE_VENTA_CODIGO369_CSHARP\MODULOS\GESTIONAR_COMPRA.resx" />
+  <event action="Analyze" type="Success" name="GESTIONAR_INVENTARIO.resx" path="D:\Proyectos\mi_proyecto\PUNTO_DE_VENTA_CODIGO369_CSHARP\PUNTO_DE_VENTA_CODIGO369_CSHARP\MODULOS\GESTIONAR_INVENTARIO.resx" />
+  <event action="Analyze" type="Success" name="GESTIONAR_PRODUCTOS.resx" path="D:\Proyectos\mi_proyecto\PUNTO_DE_VENTA_CODIGO369_CSHARP\PUNTO_DE_VENTA_CODIGO369_CSHARP\MODULOS\GESTIONAR_PRODUCTOS.resx" />
+  <event action="Analyze" type="Success" name="GESTIONAR_VENTAS.resx" path="D:\Proyectos\mi_proyecto\PUNTO_DE_VENTA_CODIGO369_CSHARP\PUNTO_DE_VENTA_CODIGO369_CSHARP\MODULOS\GESTIONAR_VENTAS.resx" />
+  <event action="Analyze" type="Success" name="LOGIN.resx" path="D:\Proyectos\mi_proyecto\PUNTO_DE_VENTA_CODIGO369_CSHARP\PUNTO_DE_VENTA_CODIGO369_CSHARP\MODULOS\LOGIN.resx" />
+  <event action="Analyze" type="Success" name="MENUPRINCIPAL.resx" path="D:\Proyectos\mi_proyecto\PUNTO_DE_VENTA_CODIGO369_CSHARP\PUNTO_DE_VENTA_CODIGO369_CSHARP\MODULOS\MENUPRINCIPAL.resx" />
+  <event action="Analyze" type="Success" name="REGISTRAR_COMPRA.resx" path="D:\Proyectos\mi_proyecto\PUNTO_DE_VENTA_CODIGO369_CSHARP\PUNTO_DE_VENTA_CODIGO369_CSHARP\MODULOS\REGISTRAR_COMPRA.resx" />
+  <event action="Analyze" type="Success" name="REGISTRAR_VENTA.resx" path="D:\Proyectos\mi_proyecto\PUNTO_DE_VENTA_CODIGO369_CSHARP\PUNTO_DE_VENTA_CODIGO369_CSHARP\MODULOS\REGISTRAR_VENTA.resx" />
+  <event action="Analyze" type="Success" name="REPORTE_MENSUAL.resx" path="D:\Proyectos\mi_proyecto\PUNTO_DE_VENTA_CODIGO369_CSHARP\PUNTO_DE_VENTA_CODIGO369_CSHARP\MODULOS\REPORTE_MENSUAL.resx" />
+  <event action="Analyze" type="Success" name="usuariosok.resx" path="D:\Proyectos\mi_proyecto\PUNTO_DE_VENTA_CODIGO369_CSHARP\PUNTO_DE_VENTA_CODIGO369_CSHARP\MODULOS\usuariosok.resx" />
+  <event action="Analyze" type="Success" name="Resources.resx" path="D:\Proyectos\mi_proyecto\PUNTO_DE_VENTA_CODIGO369_CSHARP\PUNTO_DE_VENTA_CODIGO369_CSHARP\Properties\Resources.resx" />
+  <event action="Analyze" type="Success" name="PUNTO_DE_VENTA_CODIGO369_CSHARP" path="D:\Proyectos\mi_proyecto\PUNTO_DE_VENTA_CODIGO369_CSHARP\PUNTO_DE_VENTA_CODIGO369_CSHARP\PUNTO_DE_VENTA_CODIGO369_CSHARP.csproj" />
+  <event action="Analyze" type="Success" name="PUNTO_DE_VENTA_CODIGO369_CSHARP" path="D:\Proyectos\mi_proyecto\PUNTO_DE_VENTA_CODIGO369_CSHARP\PUNTO_DE_VENTA_CODIGO369_CSHARP.sln" />
+  <event action="Backup" type="Success" name="PUNTO_DE_VENTA_CODIGO369_CSHARP" path="D:\Proyectos\mi_proyecto\PUNTO_DE_VENTA_CODIGO369_CSHARP\PUNTO_DE_VENTA_CODIGO369_CSHARP\PUNTO_DE_VENTA_CODIGO369_CSHARP.csproj" />
+  <event action="Upgrade" type="Success" name="Assembly References" path="D:\Proyectos\mi_proyecto\PUNTO_DE_VENTA_CODIGO369_CSHARP\PUNTO_DE_VENTA_CODIGO369_CSHARP\PUNTO_DE_VENTA_CODIGO369_CSHARP.csproj" />
+  <event action="Upgrade" type="Success" name="PUNTO_DE_VENTA_CODIGO369_CSHARP" path="D:\Proyectos\mi_proyecto\PUNTO_DE_VENTA_CODIGO369_CSHARP\PUNTO_DE_VENTA_CODIGO369_CSHARP\PUNTO_DE_VENTA_CODIGO369_CSHARP.csproj" />
+  <event action="Upgrade" type="Success" name="PUNTO_DE_VENTA_CODIGO369_CSHARP" path="D:\Proyectos\mi_proyecto\PUNTO_DE_VENTA_CODIGO369_CSHARP\PUNTO_DE_VENTA_CODIGO369_CSHARP.sln" />
+</log>
