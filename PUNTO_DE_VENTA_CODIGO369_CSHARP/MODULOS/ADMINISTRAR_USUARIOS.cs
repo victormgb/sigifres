@@ -91,7 +91,6 @@ namespace PUNTO_DE_VENTA_CODIGO369_CSHARP.MODULOS
                 datalistado.DataSource = dt;
                 con.Close();
                 //datalistado.Columns[1].Visible = false; id
-                datalistado.Columns[3].Visible = false;
             }
             catch(Exception ex)
             {
@@ -108,8 +107,7 @@ namespace PUNTO_DE_VENTA_CODIGO369_CSHARP.MODULOS
         {
             lbl_id_edit.Text = datalistado.SelectedCells[1].Value.ToString();
             txt_nombre_edit.Text = datalistado.SelectedCells[2].Value.ToString();
-            txt_usuario_edit.Text = datalistado.SelectedCells[2].Value.ToString();
-            txt_contra_edit.Text = datalistado.SelectedCells[3].Value.ToString();
+            txt_usuario_edit.Text = datalistado.SelectedCells[3].Value.ToString();
             txt_correo_edit.Text = datalistado.SelectedCells[4].Value.ToString();
             txt_rol_edit.Text = datalistado.SelectedCells[5].Value.ToString();
             txt_estado_edit.Text = datalistado.SelectedCells[6].Value.ToString();

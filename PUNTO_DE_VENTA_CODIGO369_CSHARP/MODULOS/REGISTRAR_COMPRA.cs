@@ -176,10 +176,10 @@ namespace PUNTO_DE_VENTA_CODIGO369_CSHARP.MODULOS
                     total = Convert.ToDouble(row.Cells[6].Value.ToString()) + total;
                     
                 }
-                txt_total_compra.Text = Convert.ToString(total);
+                txt_total_compra.Text = Convert.ToString(total) + " $";
             } else
             {
-                txt_total_compra.Text = "0";
+                txt_total_compra.Text = "0.00 $";
             }
         }
 

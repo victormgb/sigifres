@@ -496,13 +496,13 @@
             // 
             // precio_kilo
             // 
-            this.precio_kilo.HeaderText = "Precio por unidad";
+            this.precio_kilo.HeaderText = "Precio por unidad ($)";
             this.precio_kilo.Name = "precio_kilo";
             this.precio_kilo.ReadOnly = true;
             // 
             // precio_total
             // 
-            this.precio_total.HeaderText = "Precio Total";
+            this.precio_total.HeaderText = "Precio Total ($)";
             this.precio_total.Name = "precio_total";
             this.precio_total.ReadOnly = true;
             // 

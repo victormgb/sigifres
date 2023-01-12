@@ -71,6 +71,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.datalistado = new System.Windows.Forms.DataGridView();
             this.Editar = new System.Windows.Forms.DataGridViewImageColumn();
+            this.cerrarPanelAnadir = new System.Windows.Forms.PictureBox();
+            this.cerrarPanelEditar = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -84,6 +86,8 @@
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.datalistado)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cerrarPanelAnadir)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cerrarPanelEditar)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -178,7 +182,7 @@
             // 
             // panelRegistro
             // 
-            this.panelRegistro.Controls.Add(this.panelEditar);
+            this.panelRegistro.Controls.Add(this.cerrarPanelAnadir);
             this.panelRegistro.Controls.Add(this.txt_unidad);
             this.panelRegistro.Controls.Add(this.label13);
             this.panelRegistro.Controls.Add(this.txt_estado);
@@ -192,15 +196,16 @@
             this.panelRegistro.Controls.Add(this.txt_codigo);
             this.panelRegistro.Controls.Add(this.label4);
             this.panelRegistro.Controls.Add(this.label2);
-            this.panelRegistro.Location = new System.Drawing.Point(347, 223);
+            this.panelRegistro.Location = new System.Drawing.Point(331, 223);
             this.panelRegistro.Name = "panelRegistro";
-            this.panelRegistro.Size = new System.Drawing.Size(488, 463);
+            this.panelRegistro.Size = new System.Drawing.Size(488, 411);
             this.panelRegistro.TabIndex = 6;
             this.panelRegistro.Visible = false;
             this.panelRegistro.Paint += new System.Windows.Forms.PaintEventHandler(this.panelRegistro_Paint);
             // 
             // panelEditar
             // 
+            this.panelEditar.Controls.Add(this.cerrarPanelEditar);
             this.panelEditar.Controls.Add(this.comboBox3);
             this.panelEditar.Controls.Add(this.label14);
             this.panelEditar.Controls.Add(this.comboBox2);
@@ -215,9 +220,9 @@
             this.panelEditar.Controls.Add(this.txt_codigo_editar);
             this.panelEditar.Controls.Add(this.label7);
             this.panelEditar.Controls.Add(this.label8);
-            this.panelEditar.Location = new System.Drawing.Point(30, 27);
+            this.panelEditar.Location = new System.Drawing.Point(218, 223);
             this.panelEditar.Name = "panelEditar";
-            this.panelEditar.Size = new System.Drawing.Size(513, 517);
+            this.panelEditar.Size = new System.Drawing.Size(513, 431);
             this.panelEditar.TabIndex = 14;
             this.panelEditar.Visible = false;
             // 
@@ -289,6 +294,7 @@
             this.lbl_id_producto.Size = new System.Drawing.Size(35, 13);
             this.lbl_id_producto.TabIndex = 14;
             this.lbl_id_producto.Text = "label9";
+            this.lbl_id_producto.Visible = false;
             // 
             // botonEditar
             // 
@@ -311,7 +317,7 @@
             this.botonEditar.IconVisible = true;
             this.botonEditar.IconZoom = 50D;
             this.botonEditar.IsTab = false;
-            this.botonEditar.Location = new System.Drawing.Point(135, 397);
+            this.botonEditar.Location = new System.Drawing.Point(135, 363);
             this.botonEditar.Name = "botonEditar";
             this.botonEditar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(121)))), ((int)(((byte)(38)))));
             this.botonEditar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(121)))), ((int)(((byte)(38)))));
@@ -459,7 +465,7 @@
             this.botonGuardar.IconVisible = true;
             this.botonGuardar.IconZoom = 50D;
             this.botonGuardar.IsTab = false;
-            this.botonGuardar.Location = new System.Drawing.Point(138, 430);
+            this.botonGuardar.Location = new System.Drawing.Point(146, 334);
             this.botonGuardar.Name = "botonGuardar";
             this.botonGuardar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(121)))), ((int)(((byte)(38)))));
             this.botonGuardar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(121)))), ((int)(((byte)(38)))));
@@ -601,11 +607,36 @@
             this.Editar.ToolTipText = "Editar";
             this.Editar.Width = 40;
             // 
+            // cerrarPanelAnadir
+            // 
+            this.cerrarPanelAnadir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cerrarPanelAnadir.Image = ((System.Drawing.Image)(resources.GetObject("cerrarPanelAnadir.Image")));
+            this.cerrarPanelAnadir.Location = new System.Drawing.Point(446, 14);
+            this.cerrarPanelAnadir.Name = "cerrarPanelAnadir";
+            this.cerrarPanelAnadir.Size = new System.Drawing.Size(27, 18);
+            this.cerrarPanelAnadir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.cerrarPanelAnadir.TabIndex = 25;
+            this.cerrarPanelAnadir.TabStop = false;
+            this.cerrarPanelAnadir.Click += new System.EventHandler(this.cerrarPanelAnadir_Click);
+            // 
+            // cerrarPanelEditar
+            // 
+            this.cerrarPanelEditar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cerrarPanelEditar.Image = ((System.Drawing.Image)(resources.GetObject("cerrarPanelEditar.Image")));
+            this.cerrarPanelEditar.Location = new System.Drawing.Point(471, 14);
+            this.cerrarPanelEditar.Name = "cerrarPanelEditar";
+            this.cerrarPanelEditar.Size = new System.Drawing.Size(27, 18);
+            this.cerrarPanelEditar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.cerrarPanelEditar.TabIndex = 28;
+            this.cerrarPanelEditar.TabStop = false;
+            this.cerrarPanelEditar.Click += new System.EventHandler(this.cerrarPanelEditar_Click);
+            // 
             // GESTIONAR_PRODUCTOS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1024, 724);
+            this.Controls.Add(this.panelEditar);
             this.Controls.Add(this.panelRegistro);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.botonAnadir);
@@ -632,6 +663,8 @@
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.datalistado)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cerrarPanelAnadir)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cerrarPanelEditar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -679,5 +712,7 @@
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.PictureBox cerrarPanelAnadir;
+        private System.Windows.Forms.PictureBox cerrarPanelEditar;
     }
 }

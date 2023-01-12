@@ -40,7 +40,22 @@ namespace PUNTO_DE_VENTA_CODIGO369_CSHARP.MODULOS
 
         private void bunifuFlatButton3_Click(object sender, EventArgs e)
         {
+            string producto_nombre = (combo_productos.SelectedItem as ComboboxItem).Text;
+            string loteId = (combo_lotes.SelectedItem as ComboboxItem).Value;
 
+            int rowId = dataVenta.Rows.Add();
+            DataGridViewRow row = dataVenta.Rows[rowId];
+
+            row.Cells[1].Value = producto_nombre;
+            row.Cells[2].Value = loteId;
+            row.Cells[3].Value = txt_cantidad.Value;
+            row.Cells[4].Value = txt_unidad_producto.Text;
+            row.Cells[5].Value = txt_precio_unit.Value;
+            row.Cells[6].Value = txt_cantidad.Value * txt_precio_unit.Value;
+            panelAnadirLista.Visible = false;
+
+            calcular_total_venta();
+            //vaciarPanelAnadir();
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -111,7 +126,7 @@ namespace PUNTO_DE_VENTA_CODIGO369_CSHARP.MODULOS
                 while (oReader.Read())
                 {
                     txt_unidad_producto.Text = oReader["unidad"].ToString();
-                    txt_precio_kilo.Text = oReader["precio_por_unidad"].ToString();
+                    txt_precio_unit.Text = oReader["precio_por_unidad"].ToString();
 
                     //para los lotes
                     obtenerLotesPorProducto(Int32.Parse(producto_id), oReader["unidad"].ToString());
@@ -138,7 +153,7 @@ namespace PUNTO_DE_VENTA_CODIGO369_CSHARP.MODULOS
                     System.Diagnostics.Debug.WriteLine(oReader["idDetalleCompra"].ToString());
 
                     ComboboxItem cbi = new ComboboxItem();
-                    cbi.Text = "#" + oReader["idCompra"].ToString() + " - " + "Cantidad restante: " + oReader["cantidad"] + " - Unidad: " + unidad;
+                    cbi.Text = "#" + oReader["idCompra"].ToString() + " - " + "Cantidad restante: " + oReader["cantidad"];
                     cbi.Value = oReader["idCompra"].ToString();
                     combo_lotes.Items.Add(cbi);
                 }
@@ -147,6 +162,61 @@ namespace PUNTO_DE_VENTA_CODIGO369_CSHARP.MODULOS
             }
 
             combo_lotes.Enabled = true;
+        }
+
+        private void anadirProductoButton_Click(object sender, EventArgs e)
+        {
+            panelAnadirLista.Visible = true;
+        }
+
+        private void botonRegistrarVenta_Click(object sender, EventArgs e)
+        {
+            if (dataVenta.RowCount > 0)
+            {
+                registrarVenta();
+            }
+            else
+            {
+                MessageBox.Show("La lista de productos esta vacia. Por favor añada al menos 1 producto");
+            }
+        }
+
+        private void registrarVenta()
+        {
+            // guaradar compra
+            //guardarRegistroCompra();
+            //// guardar cada una de la lista de compras
+            //guardarDetalleCompra();
+            //MessageBox.Show("Su compra se realizo correctamente");
+            //GESTIONAR_COMPRA GESTIONAR_COMPRA = new GESTIONAR_COMPRA();
+            //GESTIONAR_COMPRA.Tag = this;
+            //GESTIONAR_COMPRA.Show(this);
+            //Hide();
+        }
+
+        private void calcular_total_venta()
+        {
+            if (dataVenta.RowCount > 0)
+            {
+                Double total = 0;
+                foreach (DataGridViewRow row in dataVenta.Rows)
+                {
+                    //System.Diagnostics.Debug.WriteLine(row.Cells[6].Value);
+
+                    total = Convert.ToDouble(row.Cells[6].Value.ToString()) + total;
+
+                }
+                txt_total_venta.Text = Convert.ToString(total) + " $";
+            }
+            else
+            {
+                txt_total_venta.Text = "0 $";
+            }
+        }
+
+        private void cerrarPanel_Click(object sender, EventArgs e)
+        {
+            panelAnadirLista.Visible = false;
         }
     }
 }

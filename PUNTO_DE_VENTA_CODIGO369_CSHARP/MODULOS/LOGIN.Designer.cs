@@ -44,11 +44,11 @@
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelRecuperarContra = new System.Windows.Forms.Panel();
+            this.cerrarPanel = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.txt_correo_recuperar = new System.Windows.Forms.TextBox();
             this.correo = new System.Windows.Forms.Label();
-            this.cerrarPanel = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -261,6 +261,7 @@
             // panelRecuperarContra
             // 
             this.panelRecuperarContra.BackColor = System.Drawing.Color.White;
+            this.panelRecuperarContra.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelRecuperarContra.Controls.Add(this.cerrarPanel);
             this.panelRecuperarContra.Controls.Add(this.label2);
             this.panelRecuperarContra.Controls.Add(this.bunifuFlatButton1);
@@ -271,6 +272,18 @@
             this.panelRecuperarContra.Size = new System.Drawing.Size(472, 192);
             this.panelRecuperarContra.TabIndex = 7;
             this.panelRecuperarContra.Visible = false;
+            // 
+            // cerrarPanel
+            // 
+            this.cerrarPanel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cerrarPanel.Image = ((System.Drawing.Image)(resources.GetObject("cerrarPanel.Image")));
+            this.cerrarPanel.Location = new System.Drawing.Point(436, 9);
+            this.cerrarPanel.Name = "cerrarPanel";
+            this.cerrarPanel.Size = new System.Drawing.Size(27, 18);
+            this.cerrarPanel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.cerrarPanel.TabIndex = 17;
+            this.cerrarPanel.TabStop = false;
+            this.cerrarPanel.Click += new System.EventHandler(this.cerrarPanel_Click);
             // 
             // label2
             // 
@@ -334,18 +347,6 @@
             this.correo.Size = new System.Drawing.Size(74, 18);
             this.correo.TabIndex = 0;
             this.correo.Text = "Correo: ";
-            // 
-            // cerrarPanel
-            // 
-            this.cerrarPanel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cerrarPanel.Image = ((System.Drawing.Image)(resources.GetObject("cerrarPanel.Image")));
-            this.cerrarPanel.Location = new System.Drawing.Point(436, 9);
-            this.cerrarPanel.Name = "cerrarPanel";
-            this.cerrarPanel.Size = new System.Drawing.Size(27, 18);
-            this.cerrarPanel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.cerrarPanel.TabIndex = 17;
-            this.cerrarPanel.TabStop = false;
-            this.cerrarPanel.Click += new System.EventHandler(this.cerrarPanel_Click);
             // 
             // LOGIN
             // 

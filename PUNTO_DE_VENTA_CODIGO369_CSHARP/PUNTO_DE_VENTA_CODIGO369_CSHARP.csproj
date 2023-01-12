@@ -58,6 +58,7 @@
     <Compile Include="CONEXION\CONEXIONMAESTRA.cs" />
     <Compile Include="MODELOS\Producto.cs" />
     <Compile Include="MODELOS\Usuario.cs" />
+    <Compile Include="MODELOS\Venta.cs" />
     <Compile Include="MODULOS\ADMINISTRAR_PROVEEDORES.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,11 +71,29 @@
     <Compile Include="MODULOS\ADMINISTRAR_USUARIOS.Designer.cs">
       <DependentUpon>ADMINISTRAR_USUARIOS.cs</DependentUpon>
     </Compile>
+    <Compile Include="MODULOS\BASE_DE_DATOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\BASE_DE_DATOS.Designer.cs">
+      <DependentUpon>BASE_DE_DATOS.cs</DependentUpon>
+    </Compile>
     <Compile Include="MODULOS\DETALLE_COMPRA.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MODULOS\DETALLE_COMPRA.Designer.cs">
       <DependentUpon>DETALLE_COMPRA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\DETALLE_VENTA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\DETALLE_VENTA.Designer.cs">
+      <DependentUpon>DETALLE_VENTA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\EXPORTAR_BD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\EXPORTAR_BD.Designer.cs">
+      <DependentUpon>EXPORTAR_BD.cs</DependentUpon>
     </Compile>
     <Compile Include="MODULOS\GESTIONAR_COMPRA.cs">
       <SubType>Form</SubType>
@@ -99,6 +118,12 @@
     </Compile>
     <Compile Include="MODULOS\GESTIONAR_VENTAS.Designer.cs">
       <DependentUpon>GESTIONAR_VENTAS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\IMPORTAR_BD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\IMPORTAR_BD.Designer.cs">
+      <DependentUpon>IMPORTAR_BD.cs</DependentUpon>
     </Compile>
     <Compile Include="MODULOS\LOGIN.cs">
       <SubType>Form</SubType>
@@ -176,8 +201,17 @@
     <EmbeddedResource Include="MODULOS\ADMINISTRAR_USUARIOS.resx">
       <DependentUpon>ADMINISTRAR_USUARIOS.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\BASE_DE_DATOS.resx">
+      <DependentUpon>BASE_DE_DATOS.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MODULOS\DETALLE_COMPRA.resx">
       <DependentUpon>DETALLE_COMPRA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\DETALLE_VENTA.resx">
+      <DependentUpon>DETALLE_VENTA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\EXPORTAR_BD.resx">
+      <DependentUpon>EXPORTAR_BD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MODULOS\GESTIONAR_COMPRA.resx">
       <DependentUpon>GESTIONAR_COMPRA.cs</DependentUpon>
@@ -190,6 +224,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MODULOS\GESTIONAR_VENTAS.resx">
       <DependentUpon>GESTIONAR_VENTAS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\IMPORTAR_BD.resx">
+      <DependentUpon>IMPORTAR_BD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MODULOS\LOGIN.resx">
       <DependentUpon>LOGIN.cs</DependentUpon>

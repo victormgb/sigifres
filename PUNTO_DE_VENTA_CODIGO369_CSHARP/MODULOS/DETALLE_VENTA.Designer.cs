@@ -1,6 +1,6 @@
 ﻿namespace PUNTO_DE_VENTA_CODIGO369_CSHARP.MODULOS
 {
-    partial class DETALLE_COMPRA
+    partial class DETALLE_VENTA
     {
         /// <summary>
         /// Required designer variable.
@@ -28,17 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DETALLE_COMPRA));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DETALLE_VENTA));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.datalistado = new System.Windows.Forms.DataGridView();
+            this.idVenta = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.idCompra = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.txt_total_compra = new System.Windows.Forms.TextBox();
+            this.txt_total_venta = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -59,7 +59,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1024, 100);
-            this.panel1.TabIndex = 2;
+            this.panel1.TabIndex = 3;
             // 
             // pictureBox1
             // 
@@ -88,9 +88,9 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(399, 38);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(158, 23);
+            this.label1.Size = new System.Drawing.Size(137, 23);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Detalle Compra";
+            this.label1.Text = "Detalle Venta";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // pictureBox4
@@ -113,53 +113,53 @@
             this.datalistado.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.datalistado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.datalistado.EnableHeadersVisualStyles = false;
-            this.datalistado.Location = new System.Drawing.Point(29, 182);
+            this.datalistado.Location = new System.Drawing.Point(43, 183);
             this.datalistado.Name = "datalistado";
             this.datalistado.ReadOnly = true;
             this.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.datalistado.Size = new System.Drawing.Size(959, 429);
-            this.datalistado.TabIndex = 19;
+            this.datalistado.Size = new System.Drawing.Size(959, 440);
+            this.datalistado.TabIndex = 20;
+            // 
+            // idVenta
+            // 
+            this.idVenta.AutoSize = true;
+            this.idVenta.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.idVenta.Location = new System.Drawing.Point(134, 133);
+            this.idVenta.Name = "idVenta";
+            this.idVenta.Size = new System.Drawing.Size(31, 25);
+            this.idVenta.TabIndex = 23;
+            this.idVenta.Text = "id";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(39, 139);
+            this.label2.Location = new System.Drawing.Point(38, 133);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(129, 25);
-            this.label2.TabIndex = 20;
-            this.label2.Text = "Compra: #";
-            // 
-            // idCompra
-            // 
-            this.idCompra.AutoSize = true;
-            this.idCompra.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.idCompra.Location = new System.Drawing.Point(159, 139);
-            this.idCompra.Name = "idCompra";
-            this.idCompra.Size = new System.Drawing.Size(31, 25);
-            this.idCompra.TabIndex = 21;
-            this.idCompra.Text = "id";
-            this.idCompra.Click += new System.EventHandler(this.label3_Click);
+            this.label2.Size = new System.Drawing.Size(106, 25);
+            this.label2.TabIndex = 22;
+            this.label2.Text = "Venta: #";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.txt_total_compra);
+            this.panel4.Controls.Add(this.txt_total_venta);
             this.panel4.Controls.Add(this.label3);
-            this.panel4.Location = new System.Drawing.Point(245, 617);
+            this.panel4.Location = new System.Drawing.Point(255, 629);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(537, 76);
-            this.panel4.TabIndex = 25;
+            this.panel4.TabIndex = 24;
             // 
-            // txt_total_compra
+            // txt_total_venta
             // 
-            this.txt_total_compra.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_total_compra.Enabled = false;
-            this.txt_total_compra.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_total_compra.Location = new System.Drawing.Point(270, 32);
-            this.txt_total_compra.Name = "txt_total_compra";
-            this.txt_total_compra.Size = new System.Drawing.Size(138, 20);
-            this.txt_total_compra.TabIndex = 1;
-            this.txt_total_compra.Text = "0";
+            this.txt_total_venta.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_total_venta.Enabled = false;
+            this.txt_total_venta.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_total_venta.Location = new System.Drawing.Point(270, 32);
+            this.txt_total_venta.Name = "txt_total_venta";
+            this.txt_total_venta.Size = new System.Drawing.Size(138, 20);
+            this.txt_total_venta.TabIndex = 1;
+            this.txt_total_venta.Text = "0";
             // 
             // label3
             // 
@@ -171,20 +171,20 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Total";
             // 
-            // DETALLE_COMPRA
+            // DETALLE_VENTA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1024, 724);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.idCompra);
+            this.Controls.Add(this.idVenta);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.datalistado);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "DETALLE_COMPRA";
-            this.Text = "DETALLE_COMPRA";
-            this.Load += new System.EventHandler(this.DETALLE_COMPRA_Load);
+            this.Name = "DETALLE_VENTA";
+            this.Text = "DETALLE_VENTA";
+            this.Load += new System.EventHandler(this.DETALLE_VENTA_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -206,10 +206,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.DataGridView datalistado;
+        private System.Windows.Forms.Label idVenta;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label idCompra;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox txt_total_compra;
+        private System.Windows.Forms.TextBox txt_total_venta;
         private System.Windows.Forms.Label label3;
     }
 }

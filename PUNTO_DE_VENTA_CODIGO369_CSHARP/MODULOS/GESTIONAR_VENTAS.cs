@@ -71,5 +71,20 @@ namespace PUNTO_DE_VENTA_CODIGO369_CSHARP.MODULOS
             REGISTRAR_VENTA.Show(this);
             Hide();
         }
+
+        private void datalistado_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == this.datalistado.Columns["Editar"].Index)
+            {
+                string idVenta = this.datalistado.Rows[e.RowIndex].Cells[1].Value.ToString();
+                int id = Int32.Parse(idVenta);
+                MODELOS.Venta.id = id;
+
+                DETALLE_VENTA DETALLE_VENTA = new DETALLE_VENTA();
+                DETALLE_VENTA.Tag = this;
+                DETALLE_VENTA.Show(this);
+                Hide();
+            }
+        }
     }
 }

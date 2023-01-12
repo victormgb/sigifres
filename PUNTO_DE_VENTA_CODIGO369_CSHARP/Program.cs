@@ -17,7 +17,7 @@ namespace PUNTO_DE_VENTA_CODIGO369_CSHARP
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LOGIN());
+            Application.Run(new MENUPRINCIPAL());
         }
     }
 }

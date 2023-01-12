@@ -11,26 +11,30 @@ using System.Data.SqlClient;
 
 namespace PUNTO_DE_VENTA_CODIGO369_CSHARP.MODULOS
 {
-    public partial class DETALLE_COMPRA : Form
+    public partial class DETALLE_VENTA : Form
     {
-        public DETALLE_COMPRA()
+
+        private static int id_venta;
+
+        public DETALLE_VENTA()
         {
             InitializeComponent();
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void DETALLE_COMPRA_Load(object sender, EventArgs e)
+        private void DETALLE_VENTA_Load(object sender, EventArgs e)
         {
-            idCompra.Text = "5";
-            mostrar_detalle_compra();
+            id_venta = MODELOS.Venta.id;
+            idVenta.Text = id_venta.ToString();
+            mostrar_detalle_venta();
             calcular_total();
         }
 
-        private void mostrar_detalle_compra()
+        private void mostrar_detalle_venta()
         {
             try
             {
@@ -44,11 +48,11 @@ namespace PUNTO_DE_VENTA_CODIGO369_CSHARP.MODULOS
                 //da.SelectCommand.Parameters.AddWithValue("@idVenta", id_venta);
                 using (SqlDataAdapter da = new SqlDataAdapter())
                 {
-                    string sql = "mostrar_detalle_compra";
+                    string sql = "mostrar_detalle_venta";
                     da.SelectCommand = new SqlCommand(sql, con);
                     da.SelectCommand.CommandType = CommandType.StoredProcedure;
 
-                    da.SelectCommand.Parameters.AddWithValue("@idCompra", 5);
+                    da.SelectCommand.Parameters.AddWithValue("@idVenta", id_venta);
                     da.Fill(dt);
                     datalistado.DataSource = dt;
 
@@ -65,19 +69,19 @@ namespace PUNTO_DE_VENTA_CODIGO369_CSHARP.MODULOS
         {
             if (datalistado.RowCount > 0)
             {
-                double total = 0;
+                Double total = 0;
                 foreach (DataGridViewRow row in datalistado.Rows)
                 {
                     //System.Diagnostics.Debug.WriteLine(row.Cells[6].Value);
 
-                    total = Convert.ToDouble(row.Cells[4].Value.ToString()) + total;
+                    total = Convert.ToDouble(row.Cells[5].Value.ToString()) + total;
 
                 }
-                txt_total_compra.Text = Convert.ToString(total) + " $";
+                txt_total_venta.Text = Convert.ToString(total) + " $";
             }
             else
             {
-                txt_total_compra.Text = "0 $";
+                txt_total_venta.Text = "0 $";
             }
         }
     }

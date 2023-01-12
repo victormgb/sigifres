@@ -35,40 +35,43 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.bunifuFlatButton3 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.anadirProductoButton = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.dataVenta = new System.Windows.Forms.DataGridView();
+            this.eliminar_columna = new System.Windows.Forms.DataGridViewImageColumn();
             this.nombre_producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pedido = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.peso = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.unidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.precio_unitario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.precio_total = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.panelAnadirLista = new System.Windows.Forms.Panel();
+            this.cerrarPanel = new System.Windows.Forms.PictureBox();
+            this.combo_lotes = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.txt_unidad_producto = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txt_peso = new System.Windows.Forms.NumericUpDown();
-            this.txt_precio_kilo = new System.Windows.Forms.NumericUpDown();
+            this.txt_cantidad = new System.Windows.Forms.NumericUpDown();
+            this.txt_precio_unit = new System.Windows.Forms.NumericUpDown();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.combo_productos = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.combo_lotes = new System.Windows.Forms.ComboBox();
+            this.anadirLista = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.botonRegistrarVenta = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.txt_total_venta = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataVenta)).BeginInit();
+            this.panelAnadirLista.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cerrarPanel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_cantidad)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_precio_unit)).BeginInit();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_peso)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_precio_kilo)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -130,119 +133,76 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.bunifuFlatButton1);
-            this.panel3.Controls.Add(this.dataGridView1);
+            this.panel3.Controls.Add(this.anadirProductoButton);
+            this.panel3.Controls.Add(this.dataVenta);
             this.panel3.Location = new System.Drawing.Point(12, 119);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(983, 492);
             this.panel3.TabIndex = 3;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
-            // panel2
+            // anadirProductoButton
             // 
-            this.panel2.Controls.Add(this.combo_lotes);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.txt_unidad_producto);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.txt_peso);
-            this.panel2.Controls.Add(this.txt_precio_kilo);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.combo_productos);
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.bunifuFlatButton3);
-            this.panel2.Location = new System.Drawing.Point(285, 106);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(488, 371);
-            this.panel2.TabIndex = 5;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            this.anadirProductoButton.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(121)))), ((int)(((byte)(38)))));
+            this.anadirProductoButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(121)))), ((int)(((byte)(38)))));
+            this.anadirProductoButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.anadirProductoButton.BorderRadius = 0;
+            this.anadirProductoButton.ButtonText = "Añadir producto";
+            this.anadirProductoButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.anadirProductoButton.DisabledColor = System.Drawing.Color.Gray;
+            this.anadirProductoButton.Iconcolor = System.Drawing.Color.Transparent;
+            this.anadirProductoButton.Iconimage = null;
+            this.anadirProductoButton.Iconimage_right = ((System.Drawing.Image)(resources.GetObject("anadirProductoButton.Iconimage_right")));
+            this.anadirProductoButton.Iconimage_right_Selected = null;
+            this.anadirProductoButton.Iconimage_Selected = null;
+            this.anadirProductoButton.IconMarginLeft = 0;
+            this.anadirProductoButton.IconMarginRight = 0;
+            this.anadirProductoButton.IconRightVisible = true;
+            this.anadirProductoButton.IconRightZoom = 0D;
+            this.anadirProductoButton.IconVisible = true;
+            this.anadirProductoButton.IconZoom = 50D;
+            this.anadirProductoButton.IsTab = false;
+            this.anadirProductoButton.Location = new System.Drawing.Point(776, 426);
+            this.anadirProductoButton.Name = "anadirProductoButton";
+            this.anadirProductoButton.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(121)))), ((int)(((byte)(38)))));
+            this.anadirProductoButton.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(121)))), ((int)(((byte)(38)))));
+            this.anadirProductoButton.OnHoverTextColor = System.Drawing.Color.White;
+            this.anadirProductoButton.selected = false;
+            this.anadirProductoButton.Size = new System.Drawing.Size(195, 48);
+            this.anadirProductoButton.TabIndex = 9;
+            this.anadirProductoButton.Text = "Añadir producto";
+            this.anadirProductoButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.anadirProductoButton.Textcolor = System.Drawing.Color.White;
+            this.anadirProductoButton.TextFont = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.anadirProductoButton.Click += new System.EventHandler(this.anadirProductoButton_Click);
             // 
-            // bunifuFlatButton3
+            // dataVenta
             // 
-            this.bunifuFlatButton3.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(121)))), ((int)(((byte)(38)))));
-            this.bunifuFlatButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(121)))), ((int)(((byte)(38)))));
-            this.bunifuFlatButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton3.BorderRadius = 0;
-            this.bunifuFlatButton3.ButtonText = "Añadir a la lista";
-            this.bunifuFlatButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton3.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton3.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton3.Iconimage = null;
-            this.bunifuFlatButton3.Iconimage_right = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton3.Iconimage_right")));
-            this.bunifuFlatButton3.Iconimage_right_Selected = null;
-            this.bunifuFlatButton3.Iconimage_Selected = null;
-            this.bunifuFlatButton3.IconMarginLeft = 0;
-            this.bunifuFlatButton3.IconMarginRight = 0;
-            this.bunifuFlatButton3.IconRightVisible = true;
-            this.bunifuFlatButton3.IconRightZoom = 0D;
-            this.bunifuFlatButton3.IconVisible = true;
-            this.bunifuFlatButton3.IconZoom = 50D;
-            this.bunifuFlatButton3.IsTab = false;
-            this.bunifuFlatButton3.Location = new System.Drawing.Point(156, 296);
-            this.bunifuFlatButton3.Name = "bunifuFlatButton3";
-            this.bunifuFlatButton3.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(121)))), ((int)(((byte)(38)))));
-            this.bunifuFlatButton3.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(121)))), ((int)(((byte)(38)))));
-            this.bunifuFlatButton3.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton3.selected = false;
-            this.bunifuFlatButton3.Size = new System.Drawing.Size(195, 48);
-            this.bunifuFlatButton3.TabIndex = 11;
-            this.bunifuFlatButton3.Text = "Añadir a la lista";
-            this.bunifuFlatButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuFlatButton3.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton3.TextFont = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuFlatButton3.Click += new System.EventHandler(this.bunifuFlatButton3_Click);
-            // 
-            // bunifuFlatButton1
-            // 
-            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(121)))), ((int)(((byte)(38)))));
-            this.bunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(121)))), ((int)(((byte)(38)))));
-            this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton1.BorderRadius = 0;
-            this.bunifuFlatButton1.ButtonText = "Añadir producto";
-            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.Iconimage = null;
-            this.bunifuFlatButton1.Iconimage_right = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton1.Iconimage_right")));
-            this.bunifuFlatButton1.Iconimage_right_Selected = null;
-            this.bunifuFlatButton1.Iconimage_Selected = null;
-            this.bunifuFlatButton1.IconMarginLeft = 0;
-            this.bunifuFlatButton1.IconMarginRight = 0;
-            this.bunifuFlatButton1.IconRightVisible = true;
-            this.bunifuFlatButton1.IconRightZoom = 0D;
-            this.bunifuFlatButton1.IconVisible = true;
-            this.bunifuFlatButton1.IconZoom = 50D;
-            this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(776, 426);
-            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
-            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(121)))), ((int)(((byte)(38)))));
-            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(121)))), ((int)(((byte)(38)))));
-            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(195, 48);
-            this.bunifuFlatButton1.TabIndex = 9;
-            this.bunifuFlatButton1.Text = "Añadir producto";
-            this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataVenta.AllowUserToAddRows = false;
+            this.dataVenta.AllowUserToDeleteRows = false;
+            this.dataVenta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataVenta.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.eliminar_columna,
             this.nombre_producto,
             this.pedido,
-            this.peso,
             this.cantidad,
+            this.unidad,
             this.precio_unitario,
             this.precio_total});
-            this.dataGridView1.Location = new System.Drawing.Point(-8, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(988, 420);
-            this.dataGridView1.TabIndex = 3;
+            this.dataVenta.Location = new System.Drawing.Point(-8, 0);
+            this.dataVenta.Name = "dataVenta";
+            this.dataVenta.ReadOnly = true;
+            this.dataVenta.Size = new System.Drawing.Size(988, 420);
+            this.dataVenta.TabIndex = 3;
+            // 
+            // eliminar_columna
+            // 
+            this.eliminar_columna.FillWeight = 40F;
+            this.eliminar_columna.HeaderText = "";
+            this.eliminar_columna.Image = ((System.Drawing.Image)(resources.GetObject("eliminar_columna.Image")));
+            this.eliminar_columna.Name = "eliminar_columna";
+            this.eliminar_columna.ReadOnly = true;
+            this.eliminar_columna.Width = 40;
             // 
             // nombre_producto
             // 
@@ -252,21 +212,21 @@
             // 
             // pedido
             // 
-            this.pedido.HeaderText = "Pedido";
+            this.pedido.HeaderText = "Lote";
             this.pedido.Name = "pedido";
             this.pedido.ReadOnly = true;
-            // 
-            // peso
-            // 
-            this.peso.HeaderText = "Peso";
-            this.peso.Name = "peso";
-            this.peso.ReadOnly = true;
             // 
             // cantidad
             // 
             this.cantidad.HeaderText = "Cantidad";
             this.cantidad.Name = "cantidad";
             this.cantidad.ReadOnly = true;
+            // 
+            // unidad
+            // 
+            this.unidad.HeaderText = "Unidad";
+            this.unidad.Name = "unidad";
+            this.unidad.ReadOnly = true;
             // 
             // precio_unitario
             // 
@@ -280,70 +240,58 @@
             this.precio_total.Name = "precio_total";
             this.precio_total.ReadOnly = true;
             // 
-            // panel4
+            // panelAnadirLista
             // 
-            this.panel4.Controls.Add(this.bunifuFlatButton2);
-            this.panel4.Controls.Add(this.textBox1);
-            this.panel4.Controls.Add(this.label3);
-            this.panel4.Location = new System.Drawing.Point(230, 636);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(537, 76);
-            this.panel4.TabIndex = 4;
+            this.panelAnadirLista.Controls.Add(this.cerrarPanel);
+            this.panelAnadirLista.Controls.Add(this.combo_lotes);
+            this.panelAnadirLista.Controls.Add(this.label2);
+            this.panelAnadirLista.Controls.Add(this.txt_unidad_producto);
+            this.panelAnadirLista.Controls.Add(this.label5);
+            this.panelAnadirLista.Controls.Add(this.txt_cantidad);
+            this.panelAnadirLista.Controls.Add(this.txt_precio_unit);
+            this.panelAnadirLista.Controls.Add(this.label6);
+            this.panelAnadirLista.Controls.Add(this.label4);
+            this.panelAnadirLista.Controls.Add(this.combo_productos);
+            this.panelAnadirLista.Controls.Add(this.label7);
+            this.panelAnadirLista.Controls.Add(this.anadirLista);
+            this.panelAnadirLista.Location = new System.Drawing.Point(285, 106);
+            this.panelAnadirLista.Name = "panelAnadirLista";
+            this.panelAnadirLista.Size = new System.Drawing.Size(488, 371);
+            this.panelAnadirLista.TabIndex = 5;
+            this.panelAnadirLista.Visible = false;
+            this.panelAnadirLista.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // bunifuFlatButton2
+            // cerrarPanel
             // 
-            this.bunifuFlatButton2.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(121)))), ((int)(((byte)(38)))));
-            this.bunifuFlatButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(121)))), ((int)(((byte)(38)))));
-            this.bunifuFlatButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton2.BorderRadius = 0;
-            this.bunifuFlatButton2.ButtonText = "Registrar Venta";
-            this.bunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton2.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton2.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton2.Iconimage = null;
-            this.bunifuFlatButton2.Iconimage_right = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton2.Iconimage_right")));
-            this.bunifuFlatButton2.Iconimage_right_Selected = null;
-            this.bunifuFlatButton2.Iconimage_Selected = null;
-            this.bunifuFlatButton2.IconMarginLeft = 0;
-            this.bunifuFlatButton2.IconMarginRight = 0;
-            this.bunifuFlatButton2.IconRightVisible = true;
-            this.bunifuFlatButton2.IconRightZoom = 0D;
-            this.bunifuFlatButton2.IconVisible = true;
-            this.bunifuFlatButton2.IconZoom = 50D;
-            this.bunifuFlatButton2.IsTab = false;
-            this.bunifuFlatButton2.Location = new System.Drawing.Point(319, 16);
-            this.bunifuFlatButton2.Name = "bunifuFlatButton2";
-            this.bunifuFlatButton2.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(121)))), ((int)(((byte)(38)))));
-            this.bunifuFlatButton2.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(121)))), ((int)(((byte)(38)))));
-            this.bunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton2.selected = false;
-            this.bunifuFlatButton2.Size = new System.Drawing.Size(205, 48);
-            this.bunifuFlatButton2.TabIndex = 10;
-            this.bunifuFlatButton2.Text = "Registrar Venta";
-            this.bunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuFlatButton2.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton2.TextFont = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cerrarPanel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cerrarPanel.Image = ((System.Drawing.Image)(resources.GetObject("cerrarPanel.Image")));
+            this.cerrarPanel.Location = new System.Drawing.Point(451, 12);
+            this.cerrarPanel.Name = "cerrarPanel";
+            this.cerrarPanel.Size = new System.Drawing.Size(27, 18);
+            this.cerrarPanel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.cerrarPanel.TabIndex = 29;
+            this.cerrarPanel.TabStop = false;
+            this.cerrarPanel.Click += new System.EventHandler(this.cerrarPanel_Click);
             // 
-            // textBox1
+            // combo_lotes
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Enabled = false;
-            this.textBox1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(121, 30);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(138, 20);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "0";
+            this.combo_lotes.DisplayMember = "Text";
+            this.combo_lotes.Enabled = false;
+            this.combo_lotes.FormattingEnabled = true;
+            this.combo_lotes.Location = new System.Drawing.Point(237, 140);
+            this.combo_lotes.Name = "combo_lotes";
+            this.combo_lotes.Size = new System.Drawing.Size(219, 21);
+            this.combo_lotes.TabIndex = 28;
             // 
-            // label3
+            // label2
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(52, 30);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(48, 18);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Total";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(33, 143);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(44, 18);
+            this.label2.TabIndex = 27;
+            this.label2.Text = "Lote";
             // 
             // txt_unidad_producto
             // 
@@ -364,31 +312,31 @@
             this.label5.TabIndex = 25;
             this.label5.Text = "Unidad";
             // 
-            // txt_peso
+            // txt_cantidad
             // 
-            this.txt_peso.DecimalPlaces = 2;
-            this.txt_peso.Location = new System.Drawing.Point(237, 190);
-            this.txt_peso.Maximum = new decimal(new int[] {
+            this.txt_cantidad.DecimalPlaces = 2;
+            this.txt_cantidad.Location = new System.Drawing.Point(237, 190);
+            this.txt_cantidad.Maximum = new decimal(new int[] {
             1410065408,
             2,
             0,
             0});
-            this.txt_peso.Name = "txt_peso";
-            this.txt_peso.Size = new System.Drawing.Size(219, 20);
-            this.txt_peso.TabIndex = 24;
+            this.txt_cantidad.Name = "txt_cantidad";
+            this.txt_cantidad.Size = new System.Drawing.Size(219, 20);
+            this.txt_cantidad.TabIndex = 24;
             // 
-            // txt_precio_kilo
+            // txt_precio_unit
             // 
-            this.txt_precio_kilo.DecimalPlaces = 2;
-            this.txt_precio_kilo.Location = new System.Drawing.Point(237, 227);
-            this.txt_precio_kilo.Maximum = new decimal(new int[] {
+            this.txt_precio_unit.DecimalPlaces = 2;
+            this.txt_precio_unit.Location = new System.Drawing.Point(237, 227);
+            this.txt_precio_unit.Maximum = new decimal(new int[] {
             1410065408,
             2,
             0,
             0});
-            this.txt_precio_kilo.Name = "txt_precio_kilo";
-            this.txt_precio_kilo.Size = new System.Drawing.Size(219, 20);
-            this.txt_precio_kilo.TabIndex = 23;
+            this.txt_precio_unit.Name = "txt_precio_unit";
+            this.txt_precio_unit.Size = new System.Drawing.Size(219, 20);
+            this.txt_precio_unit.TabIndex = 23;
             // 
             // label6
             // 
@@ -430,32 +378,113 @@
             this.label7.TabIndex = 19;
             this.label7.Text = "Seleccione Producto";
             // 
-            // label2
+            // anadirLista
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(33, 143);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 18);
-            this.label2.TabIndex = 27;
-            this.label2.Text = "Lote";
+            this.anadirLista.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(121)))), ((int)(((byte)(38)))));
+            this.anadirLista.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(121)))), ((int)(((byte)(38)))));
+            this.anadirLista.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.anadirLista.BorderRadius = 0;
+            this.anadirLista.ButtonText = "Añadir a la lista";
+            this.anadirLista.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.anadirLista.DisabledColor = System.Drawing.Color.Gray;
+            this.anadirLista.Iconcolor = System.Drawing.Color.Transparent;
+            this.anadirLista.Iconimage = null;
+            this.anadirLista.Iconimage_right = ((System.Drawing.Image)(resources.GetObject("anadirLista.Iconimage_right")));
+            this.anadirLista.Iconimage_right_Selected = null;
+            this.anadirLista.Iconimage_Selected = null;
+            this.anadirLista.IconMarginLeft = 0;
+            this.anadirLista.IconMarginRight = 0;
+            this.anadirLista.IconRightVisible = true;
+            this.anadirLista.IconRightZoom = 0D;
+            this.anadirLista.IconVisible = true;
+            this.anadirLista.IconZoom = 50D;
+            this.anadirLista.IsTab = false;
+            this.anadirLista.Location = new System.Drawing.Point(156, 296);
+            this.anadirLista.Name = "anadirLista";
+            this.anadirLista.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(121)))), ((int)(((byte)(38)))));
+            this.anadirLista.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(121)))), ((int)(((byte)(38)))));
+            this.anadirLista.OnHoverTextColor = System.Drawing.Color.White;
+            this.anadirLista.selected = false;
+            this.anadirLista.Size = new System.Drawing.Size(195, 48);
+            this.anadirLista.TabIndex = 11;
+            this.anadirLista.Text = "Añadir a la lista";
+            this.anadirLista.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.anadirLista.Textcolor = System.Drawing.Color.White;
+            this.anadirLista.TextFont = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.anadirLista.Click += new System.EventHandler(this.bunifuFlatButton3_Click);
             // 
-            // combo_lotes
+            // panel4
             // 
-            this.combo_lotes.DisplayMember = "Text";
-            this.combo_lotes.Enabled = false;
-            this.combo_lotes.FormattingEnabled = true;
-            this.combo_lotes.Location = new System.Drawing.Point(237, 140);
-            this.combo_lotes.Name = "combo_lotes";
-            this.combo_lotes.Size = new System.Drawing.Size(219, 21);
-            this.combo_lotes.TabIndex = 28;
+            this.panel4.Controls.Add(this.botonRegistrarVenta);
+            this.panel4.Controls.Add(this.txt_total_venta);
+            this.panel4.Controls.Add(this.label3);
+            this.panel4.Location = new System.Drawing.Point(226, 636);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(537, 76);
+            this.panel4.TabIndex = 4;
+            // 
+            // botonRegistrarVenta
+            // 
+            this.botonRegistrarVenta.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(121)))), ((int)(((byte)(38)))));
+            this.botonRegistrarVenta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(121)))), ((int)(((byte)(38)))));
+            this.botonRegistrarVenta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.botonRegistrarVenta.BorderRadius = 0;
+            this.botonRegistrarVenta.ButtonText = "Registrar Venta";
+            this.botonRegistrarVenta.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.botonRegistrarVenta.DisabledColor = System.Drawing.Color.Gray;
+            this.botonRegistrarVenta.Iconcolor = System.Drawing.Color.Transparent;
+            this.botonRegistrarVenta.Iconimage = null;
+            this.botonRegistrarVenta.Iconimage_right = ((System.Drawing.Image)(resources.GetObject("botonRegistrarVenta.Iconimage_right")));
+            this.botonRegistrarVenta.Iconimage_right_Selected = null;
+            this.botonRegistrarVenta.Iconimage_Selected = null;
+            this.botonRegistrarVenta.IconMarginLeft = 0;
+            this.botonRegistrarVenta.IconMarginRight = 0;
+            this.botonRegistrarVenta.IconRightVisible = true;
+            this.botonRegistrarVenta.IconRightZoom = 0D;
+            this.botonRegistrarVenta.IconVisible = true;
+            this.botonRegistrarVenta.IconZoom = 50D;
+            this.botonRegistrarVenta.IsTab = false;
+            this.botonRegistrarVenta.Location = new System.Drawing.Point(319, 16);
+            this.botonRegistrarVenta.Name = "botonRegistrarVenta";
+            this.botonRegistrarVenta.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(121)))), ((int)(((byte)(38)))));
+            this.botonRegistrarVenta.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(121)))), ((int)(((byte)(38)))));
+            this.botonRegistrarVenta.OnHoverTextColor = System.Drawing.Color.White;
+            this.botonRegistrarVenta.selected = false;
+            this.botonRegistrarVenta.Size = new System.Drawing.Size(205, 48);
+            this.botonRegistrarVenta.TabIndex = 10;
+            this.botonRegistrarVenta.Text = "Registrar Venta";
+            this.botonRegistrarVenta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.botonRegistrarVenta.Textcolor = System.Drawing.Color.White;
+            this.botonRegistrarVenta.TextFont = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonRegistrarVenta.Click += new System.EventHandler(this.botonRegistrarVenta_Click);
+            // 
+            // txt_total_venta
+            // 
+            this.txt_total_venta.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_total_venta.Enabled = false;
+            this.txt_total_venta.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_total_venta.Location = new System.Drawing.Point(121, 30);
+            this.txt_total_venta.Name = "txt_total_venta";
+            this.txt_total_venta.Size = new System.Drawing.Size(138, 20);
+            this.txt_total_venta.TabIndex = 1;
+            this.txt_total_venta.Text = "0";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(52, 30);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(48, 18);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Total";
             // 
             // REGISTRAR_VENTA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1024, 724);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panelAnadirLista);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
@@ -469,13 +498,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel3.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataVenta)).EndInit();
+            this.panelAnadirLista.ResumeLayout(false);
+            this.panelAnadirLista.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cerrarPanel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_cantidad)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_precio_unit)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_peso)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_precio_kilo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -486,31 +516,33 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_total_venta;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nombre_producto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pedido;
-        private System.Windows.Forms.DataGridViewTextBoxColumn peso;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cantidad;
-        private System.Windows.Forms.DataGridViewTextBoxColumn precio_unitario;
-        private System.Windows.Forms.DataGridViewTextBoxColumn precio_total;
+        private System.Windows.Forms.Panel panelAnadirLista;
+        private System.Windows.Forms.DataGridView dataVenta;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton3;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton2;
+        private Bunifu.Framework.UI.BunifuFlatButton anadirLista;
+        private Bunifu.Framework.UI.BunifuFlatButton anadirProductoButton;
+        private Bunifu.Framework.UI.BunifuFlatButton botonRegistrarVenta;
         private System.Windows.Forms.ComboBox combo_lotes;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txt_unidad_producto;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.NumericUpDown txt_peso;
-        private System.Windows.Forms.NumericUpDown txt_precio_kilo;
+        private System.Windows.Forms.NumericUpDown txt_cantidad;
+        private System.Windows.Forms.NumericUpDown txt_precio_unit;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox combo_productos;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox cerrarPanel;
+        private System.Windows.Forms.DataGridViewImageColumn eliminar_columna;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombre_producto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pedido;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cantidad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn unidad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn precio_unitario;
+        private System.Windows.Forms.DataGridViewTextBoxColumn precio_total;
     }
 }

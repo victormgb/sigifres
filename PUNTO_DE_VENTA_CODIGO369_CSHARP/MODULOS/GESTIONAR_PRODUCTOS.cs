@@ -202,5 +202,15 @@ namespace PUNTO_DE_VENTA_CODIGO369_CSHARP.MODULOS
         {
 
         }
+
+        private void cerrarPanelAnadir_Click(object sender, EventArgs e)
+        {
+            panelRegistro.Visible = false;
+        }
+
+        private void cerrarPanelEditar_Click(object sender, EventArgs e)
+        {
+            panelEditar.Visible = false;
+        }
     }
 }

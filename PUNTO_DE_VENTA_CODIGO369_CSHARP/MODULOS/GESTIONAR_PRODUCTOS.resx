@@ -382,7 +382,17 @@
         Zh26ZmYdumZmHbpmZh26ZmYp88uX49rHpOef/X3+cvkGOp5MD6NwflwAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="botonEditar.Iconimage_right" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="cerrarPanelAnadir.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        ugAAALoBTx5ghQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAADbSURBVEhLtZXB
+        CgIxDET7dfonehe86KcqntX9Ak86E4yUkm2TSAceyHYzk3bXTflqC25gAXteSIq1T3AFG16gaP4C74oj
+        iIo1tQc9JYSd1wtKJKQ1V7gT2ZK1SDwha+bkDuTcrEWlF9IzJzsgOgDrBuUEWoVrIgWZhkSewrS5anSu
+        PTwvhWjUpcWw81aRkLC5yhOSNqc8AWeQUuSIwiGZh+wOmfqajjr/648WKQyHZLpy18z8XMv4nT5wONas
+        RY+5ai3kAmQwTx36FH9wJw/wG3MJ8czpwc7hWcoH9UIwSM3KIc0AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="botonGuardar.Iconimage_right" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAAhFJREFUeF7t0kFu20AMBVCvu+oxsuzxeozeuLGpB7fNp8cGBFSyNG/D5JOjzBC5
@@ -397,7 +407,17 @@
         LpdPUW1jO++gghkAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="botonGuardar.Iconimage_right" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="cerrarPanelEditar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        ugAAALoBTx5ghQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAADbSURBVEhLtZXB
+        CgIxDET7dfonehe86KcqntX9Ak86E4yUkm2TSAceyHYzk3bXTflqC25gAXteSIq1T3AFG16gaP4C74oj
+        iIo1tQc9JYSd1wtKJKQ1V7gT2ZK1SDwha+bkDuTcrEWlF9IzJzsgOgDrBuUEWoVrIgWZhkSewrS5anSu
+        PTwvhWjUpcWw81aRkLC5yhOSNqc8AWeQUuSIwiGZh+wOmfqajjr/648WKQyHZLpy18z8XMv4nT5wONas
+        RY+5ai3kAmQwTx36FH9wJw/wG3MJ8czpwc7hWcoH9UIwSM3KIc0AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="botonEditar.Iconimage_right" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAAhFJREFUeF7t0kFu20AMBVCvu+oxsuzxeozeuLGpB7fNp8cGBFSyNG/D5JOjzBC5

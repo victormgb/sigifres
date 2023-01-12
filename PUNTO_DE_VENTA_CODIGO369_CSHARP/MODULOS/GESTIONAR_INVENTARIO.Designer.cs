@@ -44,6 +44,8 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -55,6 +57,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -118,8 +122,8 @@
             // 
             this.flowLayoutPanel1.AutoScrollMargin = new System.Drawing.Size(15, 15);
             this.flowLayoutPanel1.AutoSize = true;
-            this.flowLayoutPanel1.Controls.Add(this.panel3);
             this.flowLayoutPanel1.Controls.Add(this.panel4);
+            this.flowLayoutPanel1.Controls.Add(this.panel3);
             this.flowLayoutPanel1.Controls.Add(this.panel2);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(7, 233);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -132,7 +136,7 @@
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.pictureBox3);
             this.panel3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel3.Location = new System.Drawing.Point(45, 3);
+            this.panel3.Location = new System.Drawing.Point(382, 3);
             this.panel3.Margin = new System.Windows.Forms.Padding(45, 3, 45, 3);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(247, 249);
@@ -168,7 +172,7 @@
             this.panel4.Controls.Add(this.label2);
             this.panel4.Controls.Add(this.pictureBox1);
             this.panel4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel4.Location = new System.Drawing.Point(382, 3);
+            this.panel4.Location = new System.Drawing.Point(45, 3);
             this.panel4.Margin = new System.Windows.Forms.Padding(45, 3, 45, 3);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(247, 249);
@@ -234,11 +238,33 @@
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
             // 
+            // panel5
+            // 
+            this.panel5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel5.BackgroundImage")));
+            this.panel5.Controls.Add(this.pictureBox7);
+            this.panel5.Location = new System.Drawing.Point(922, 608);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(90, 90);
+            this.panel5.TabIndex = 4;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.SystemColors.Window;
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(28, 20);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(42, 54);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 7;
+            this.pictureBox7.TabStop = false;
+            // 
             // GESTIONAR_INVENTARIO
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1024, 724);
+            this.Controls.Add(this.panel5);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -259,6 +285,8 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -281,5 +309,7 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.PictureBox pictureBox7;
     }
 }
